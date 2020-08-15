@@ -1,0 +1,108 @@
+/*
+ Full Name: Zhipeng Sun
+Email: Zhipeng_sun@student.uml.edu
+Affiliation: Umass Lowell 91.61 GUI Programming 1
+Date: 2020-08-13
+Web Address: https://zhipengsun-gui.github.io/GUI_HW8/
+Description: This is the html file to create basic format of scrabble slots, word and score place remain, letter tile and rack place remain, reset button with click function.
+Reference: https://www.w3schools.com/
+*/
+.flex {
+    display: flex;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+body {
+    background-color: rgb(166, 184, 134);
+    margin: 0;
+    font-family: 'Roboto', 'Source Sans Pro', Verdana, Arial, sans-serif;
+}
+.container {
+    background-color: FloralWhite;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 16px grey;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+header p {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #8b3d3d;
+    line-height: 32px;
+}
+.list {
+    position: relative;
+    line-height: 32px;
+
+}
+.list:hover > .hw-list {
+    display: flex;
+}
+.hw-list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+.hw-list li {
+    margin: 0 5px;
+}
+#scoreBoard {
+    justify-content: space-between;
+    width: 600px;
+    margin: 30px auto 10px auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #339933;
+    font-size: 14px;
+}
+
+#instruction {
+    text-align: center;
+
+}
+
+#instruction img {
+    width: 15px;
+    height: 15px;
+    filter: grayscale(1);
+}
+
+.buttonBox {
+    text-align: center;
+}
+#board, #letterRack {
+    display: flex;
+    width: 630px;
+    margin: 0 auto;
+}
+#letterRack {
+    margin-top: 30px;
+    justify-content: center;
+
+}
+
+#letterRack > img {
+    margin-right: 5px;
+}
+.boardSlot {
+    border-style: solid;
+    border-color: black;
+    /* float: left; */
+    position: relative;
+}
+
+.dragActive {
+    box-shadow: 0 0 15px red;
+}
+.hoverActiove {
+    box-shadow: 0 0 15px blue;
+}
